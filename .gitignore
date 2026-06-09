@@ -1,0 +1,48 @@
+# Python and editor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Logs and temporary runtime files
+*.log
+*.out
+*.tmp
+*.swp
+
+# Experiment outputs generated inside task folders
+**/runs/
+**/outputs/
+**/output/
+**/output_logs/
+**/checkpoints/
+
+# Large model/checkpoint artifacts. Keep small configs/tokenizers in Git.
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.h5
+*.faiss
+
+# Large feature/data arrays and serialized intermediate files
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+
+# Local copied datasets and feature matrices
+01_pretraining/**/data/
+04_interpretability/motif_comparison/data/
+common/tpmlc_runtime/data/
+
+# Local environment folders
+.conda/
+.venv/
+venv/
+env/
+

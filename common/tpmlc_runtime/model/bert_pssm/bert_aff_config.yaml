@@ -1,0 +1,13 @@
+num_hiddens: 256
+norm_shape: 
+  - 256
+ffn_num_input: 256
+ffn_num_hiddens: 256
+num_heads: 4
+num_layers: 12
+dropout: 0.2
+max_len: 128
+key_size: 256
+query_size: 256
+value_size: 256
+use_hhm: True

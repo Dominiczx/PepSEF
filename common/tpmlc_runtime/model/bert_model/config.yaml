@@ -1,0 +1,6 @@
+num_hiddens: 256
+num_layers: 12
+num_heads: 8
+ffn_num_hiddens: 1024
+max_length: 128
+dropout: 0.2

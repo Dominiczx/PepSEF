@@ -1,0 +1,39 @@
+model_name: "protein-sequence-model"
+pretrained_data_path: "../data/merge_80.fasta"
+save_path: "models/best_model2.pth"
+
+tokenizer:
+  vocab_path: "models/uniprot_1kmer_vocab.txt"
+  special_token_path: "models/special_tokens.json"
+  max_length: 128
+  special_tokens:
+    pad_token: "<pad>"
+    cls_token: "<cls>"
+    sep_token: "<sep>"
+    mask_token: "<mask>"
+    unk_token: "<unk>"
+    bos_token: "<bos>"
+    eos_token: "<eos>"
+
+dataset:
+  path: "../data/merge_80.fasta"
+  
+
+training:
+  epochs: 2000
+  batch_size: 1024
+  learning_rate: 5e-5
+  max_length: 128
+
+model:
+  bert:
+    num_hiddens: 256
+    num_layers: 12
+    num_heads: 8
+    ffn_num_hiddens: 1024
+    max_length: 128
+    dropout: 0.2
+  t5:
+    d_model: 256
+    nhead: 4
+    n_dec_layers: 12

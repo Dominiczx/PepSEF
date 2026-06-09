@@ -1,0 +1,14 @@
+{
+    "model_type": "t5",
+    "d_model": 512,
+    "d_ff": 2048,
+    "num_layers": 6,
+    "num_heads": 8,
+    "dropout_rate": 0.1,
+    "max_position_embeddings": 512,
+    "vocab_size": 32000,
+    "pad_token_id": 0,
+    "eos_token_id": 1,
+    "decoder_start_token_id": 2,
+    "use_cache": true
+}

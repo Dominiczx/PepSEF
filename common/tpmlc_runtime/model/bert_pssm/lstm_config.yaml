@@ -1,0 +1,3 @@
+in_features: 256
+hidden_size: 256
+layer_num: 4
